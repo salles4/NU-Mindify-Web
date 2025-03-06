@@ -1,0 +1,157 @@
+[
+  {
+    "id": "7f9597ce-cb46-aedc-d628-86b5ebab12a7",
+    "username": "fsalles",
+    "email": "fjsalles.04@gmail.com",
+    "password": "123123123",
+    "chat": [
+      {
+        "sender": "ai",
+        "message": "Hey there, future psychologist! 👋 I'm your friendly Mindibot! here to help you ace your studies. Ready to mindify your reviews?"
+      },
+      {
+        "sender": "user",
+        "message": "Hi, I'm testing the app if it's working.",
+        "time": "Fri Feb 28 2025 15:24:33 GMT+0000"
+      },
+      {
+        "sender": "ai",
+        "message": "Hello!  I'm here to help psychology students.  If you have any questions related to psychology, feel free to ask.\n",
+        "time": "Fri Feb 28 2025 15:24:33 GMT+0000"
+      },
+      {
+        "sender": "user",
+        "message": "What is react native?",
+        "time": "Sat Mar 01 2025 05:11:17 GMT+0000"
+      },
+      {
+        "sender": "ai",
+        "message": "That's a question about software development, not psychology.  I can only assist with questions related to psychology.\n",
+        "time": "Sat Mar 01 2025 05:11:17 GMT+0000"
+      },
+      {
+        "sender": "user",
+        "message": "What is abnormal psychology?",
+        "time": "Sat Mar 01 2025 05:11:35 GMT+0000"
+      },
+      {
+        "sender": "ai",
+        "message": "Abnormal psychology is the branch of psychology that studies unusual patterns of behavior, emotion, and thought, which may or may not be understood as indicative of a mental disorder.  It focuses on identifying, describing, explaining, and treating these patterns.\n\n• Focus on deviance:  Abnormal psychology examines behaviors that deviate significantly from cultural norms and expectations.\n• Distress and dysfunction:  It considers behaviors that cause significant personal distress or impairment in daily functioning.\n• Diagnosis and classification: It utilizes diagnostic systems (like the DSM-5) to categorize and understand mental disorders.\n• Etiology and treatment:  It explores the causes (etiology) of abnormal behavior and develops and evaluates treatments.\n",
+        "time": "Sat Mar 01 2025 05:11:35 GMT+0000"
+      }
+    ],
+    "progress": [4, 3, 3, 0, 1],
+    "avatar": 1
+  },
+  {
+    "id": "ee3af13a-80fa-08e6-84ba-65474a73a8f2",
+    "username": "fsalles2",
+    "email": "fjpogi7@gmail.com",
+    "password": "123123123",
+    "chat": [
+      {
+        "sender": "ai",
+        "message": "Hey there, future psychologist! 👋 I'm your friendly Mindibot! here to help you ace your studies. Ready to mindify your reviews?"
+      },
+      {
+        "sender": "user",
+        "message": "What is Fibonacci sequence?",
+        "time": "Sat Mar 01 2025 14:40:09 GMT+0000"
+      },
+      {
+        "sender": "ai",
+        "message": "That's a question about mathematics, not psychology.  I can't help with that.  My expertise is in psychology.\n",
+        "time": "Sat Mar 01 2025 14:40:09 GMT+0000"
+      },
+      {
+        "sender": "user",
+        "message": "Then tell me about Developmental Psychology",
+        "time": "Sat Mar 01 2025 14:43:16 GMT+0000"
+      },
+      {
+        "sender": "ai",
+        "message": "Developmental psychology studies how people change and grow throughout their lifespan, from conception to death.  It examines physical, cognitive, social, and emotional development.\n\n• Key Areas of Focus:\n    • Physical Development:  Changes in body size, proportions, appearance, brain development, motor skills, and overall health.\n    • Cognitive Development: Changes in mental processes like thinking, reasoning, problem-solving, memory, and language.  Major theorists include Piaget, Vygotsky, and information-processing researchers.\n    • Social-Emotional Development: Changes in personality, emotions, social relationships, moral reasoning, and self-concept.  Attachment theory and Erikson's stages of psychosocial development are key concepts.\n    • Nature vs. Nurture: The ongoing debate about the relative contributions of genetics (nature) and environment (nurture) to development.\n\nDevelopmental psychologists use various research methods, including longitudinal studies (following the same individuals over time) and cross-sectional studies (comparing different age groups at one time).  The field informs our understanding of child development, adolescence, adulthood, and aging, and has implications for education, parenting, and social policy.\n",
+        "time": "Sat Mar 01 2025 14:43:16 GMT+0000"
+      }
+    ],
+    "progress": [0, 0, 0, 0, 0],
+    "avatar": 0
+  },
+  {
+    "id": "2d6c5d0c-f046-6a13-65c1-bbdd1f990766",
+    "username": "fjsalles",
+    "email": "fjsalles@gmail.com",
+    "password": "123123",
+    "chat": [],
+    "progress": [2, 0, 0, 0, 0],
+    "avatar": 0
+  },
+  {
+    "id": "1f6031e2-9eea-5477-df8b-d7d8511e5e62",
+    "username": "Francis2",
+    "email": "fjsalles.02@gmail.com",
+    "password": "123123",
+    "chat": [
+      {
+        "sender": "ai",
+        "message": "Hey there, future psychologist! 👋 I'm your friendly Mindibot! here to help you ace your studies. Ready to mindify your reviews?"
+      },
+      {
+        "sender": "user",
+        "message": "What is here to slay?",
+        "time": "Sat Mar 01 2025 10:55:09 GMT+0000"
+      },
+      {
+        "sender": "ai",
+        "message": "That's not a question related to psychology.  I can only help with questions about psychological topics.\n",
+        "time": "Sat Mar 01 2025 10:55:09 GMT+0000"
+      },
+      {
+        "sender": "user",
+        "message": "What is abnormal psychology?",
+        "time": "Sat Mar 01 2025 10:55:27 GMT+0000"
+      },
+      {
+        "sender": "ai",
+        "message": "Abnormal psychology is the study of psychological disorders.  It examines the nature, causes, and treatment of mental illnesses.\n\n• Focus on atypical behavior: It investigates behaviors, thoughts, and emotions that deviate significantly from what's considered normal within a given culture.\n• Diagnosis and classification:  A major component involves identifying and classifying different disorders using systems like the DSM-5.\n• Etiology and treatment:  It explores the factors contributing to the development of disorders (biological, psychological, social) and evaluates different therapeutic approaches.\n• Research-based:  Abnormal psychology relies heavily on empirical research to understand and address mental health issues.\n",
+        "time": "Sat Mar 01 2025 10:55:27 GMT+0000"
+      }
+    ],
+    "progress": [3, 0, 0, 0, 0],
+    "avatar": 4
+  },
+  {
+    "id": "5ba822c6-4c76-f842-e5d2-544c899b59e9",
+    "username": "fsalles04",
+    "email": "fjsalles4@gmail.com",
+    "password": "123123123",
+    "chat": [
+      {
+        "sender": "ai",
+        "message": "Hey there, future psychologist! 👋 I'm your friendly Mindibot! here to help you ace your studies. Ready to mindify your reviews?"
+      },
+      {
+        "sender": "user",
+        "message": "What is fibonacci sequence?",
+        "time": "Sat Mar 01 2025 14:37:13 GMT+0000"
+      },
+      {
+        "sender": "ai",
+        "message": "That's a question more suited for a mathematics course.  I'm designed to help with psychology-related inquiries.\n",
+        "time": "Sat Mar 01 2025 14:37:13 GMT+0000"
+      },
+      {
+        "sender": "user",
+        "message": "What topic should i start reviewing?",
+        "time": "Sat Mar 01 2025 14:38:06 GMT+0000"
+      },
+      {
+        "sender": "ai",
+        "message": "To best advise you on what psychology topic to review first, I need more context.  What is your current level of study (e.g., undergraduate, graduate)? What is your upcoming assessment (exam, paper, presentation)?  What areas of psychology are you finding most challenging or interesting?\n\nHowever, some generally important and foundational areas include:\n\n• Research Methods: Understanding research design, statistical analysis, and ethical considerations is crucial across all areas of psychology.\n• Biological Bases of Behavior: This covers the nervous system, neurotransmitters, genetics, and their influence on behavior.\n• Cognitive Psychology:  Examines mental processes like memory, attention, perception, and problem-solving.\n• Social Psychology: Focuses on how individuals' thoughts, feelings, and behaviors are influenced by others.\n• Developmental Psychology: Explores changes in behavior and mental processes across the lifespan.\n\n\nWithout more information, prioritizing these foundational areas is a good starting point.\n",
+        "time": "Sat Mar 01 2025 14:38:06 GMT+0000"
+      }
+    ],
+    "progress": [2, 1, 1, 0, 0],
+    "avatar": 4
+  }
+]
