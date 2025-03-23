@@ -1,9 +1,81 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
 @import "tailwindcss";
+@plugin "daisyui";
 
 @theme{
     --color-nu-blue: #35408E;
     --font-poppins: "Poppins", sans-serif;
 }
 
-//css for studentspage
+/* ------------------------------------ SIDE MENU BAR -------------------------------------- */
+.mainCont{
+    @apply w-auto min-h-full flex flex-row bg-red-500; 
+    overflow: visible; 
+}
+
+.active-side-menu{
+    @apply w-[20%] h-lvh bg-amber-100 items-center justify-center;
+    position: sticky;
+    top: 0;
+}
+
+.side-menu{
+    @apply w-[3%] h-lvh bg-amber-100 items-center justify-center;
+    position: sticky;
+    top: 0;
+}
+
+.btn-container{
+    @apply w-full h-[5%] flex flex-row mb-[10px] items-center;
+    cursor: pointer;
+}
+
+.menu-icon{
+    @apply w-[20px] m-[10px] ml-[10px];
+    cursor: pointer;
+}
+
+.menu-text{
+    @apply text-base font-medium font-sans text-black ml-[10px];
+    cursor: pointer;
+}
+
+.avatar{
+    @apply w-full h-auto justify-center items-center mb-[10px];
+    cursor: pointer;
+}
+.avatar-container{
+    @apply ring-primary ring-offset-base-100 w-24 rounded-full ring 
+    ring-offset-2;
+}
+
+.name-container{
+    @apply w-full flex flex-col justify-center items-center mb-[20px];
+}
+.user-name{
+    @apply text-yellow-600 text-lg font-bold;
+}
+
+.user-email{
+    @apply text-xs text-gray-500 font-medium;
+}
+
+.logout-container{
+    @apply w-full flex flex-col justify-center items-center 
+    mb-[20px];
+}
+
+.logout-btn{
+    @apply btn btn-soft btn-warning w-[150px] h-[50px];
+}
+
+/* ------------------------------------ END SIDE MENU BAR -------------------------------------- */
+
+
+.active-main-content{
+    @apply w-[80%] h-[2000px] bg-blue-800;
+}
+.main-content{
+    @apply w-[97%] h-[2000px] bg-blue-800;
+}
+
