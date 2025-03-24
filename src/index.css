@@ -11,27 +11,52 @@
 .mainCont{
     @apply w-auto min-h-full flex flex-row bg-red-500; 
     overflow: visible; 
+    background-image: url('../src/pages/Sample/images/pattern.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .active-side-menu{
-    @apply w-[20%] h-lvh bg-amber-100 items-center justify-center;
+    @apply w-[20vw] h-[95vh] bg-yellow-50 mt-[2.5vh] ml-[1.5vw] rounded-xl mr-[1.5vw];
     position: sticky;
     top: 0;
 }
 
 .side-menu{
-    @apply w-[3%] h-lvh bg-amber-100 items-center justify-center;
+    @apply w-[3vw] h-[95vh] bg-yellow-50 mt-[2.5vh] ml-[1.5vw] rounded-lg mr-[1.5vw];
     position: sticky;
     top: 0;
 }
 
+/* ------------------------------------ CONTENT -------------------------------------- */
+
+.active-main-content{
+    @apply w-[75vw] h-auto flex items-center flex-col mt-[2.5vh];
+}
+.main-content{
+    @apply w-[92vw] h-auto flex items-center flex-col mt-[2.5vh];
+}
+
+
+.header{
+    @apply w-full h-[30vh] bg-yellow-50 rounded-2xl;
+}
+
+.body{
+    @apply w-full h-[120vh] bg-yellow-50 rounded-2xl mt-[2vh];
+}
+
+
+/* ------------------------------------ END CONTENT -------------------------------------- */
+
 .btn-container{
-    @apply w-full h-[5%] flex flex-row mb-[10px] items-center;
+    @apply w-full h-[5%] flex flex-row mb-[10px] items-center pl-[1px] pt-[1vh];
     cursor: pointer;
 }
 
 .menu-icon{
-    @apply w-[20px] m-[10px] ml-[10px];
+    @apply w-[20px] m-[10px] ml-[10px] ;
     cursor: pointer;
 }
 
@@ -72,10 +97,5 @@
 /* ------------------------------------ END SIDE MENU BAR -------------------------------------- */
 
 
-.active-main-content{
-    @apply w-[80%] h-[2000px] bg-blue-800;
-}
-.main-content{
-    @apply w-[97%] h-[2000px] bg-blue-800;
-}
+
 

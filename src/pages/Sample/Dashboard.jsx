@@ -25,10 +25,6 @@ export default function Dashboard() {
         setActive(!isActive)
     }
 
-    function handleGlossary(){
-
-    }
-
     return (
         <>
             <div className="mainCont">
@@ -57,12 +53,12 @@ export default function Dashboard() {
                         ''
                     }
 
-                    <Link to={'/'}><MenuBtn icons={home} text={isActive ? 'Dashboard' : ''} /></Link>
+                    <MenuBtn icons={home} text={isActive ? 'Dashboard' : ''} goTo={'/'} />
                     <MenuBtn icons={analytic} text={isActive ? 'Analytics' : ''} />
                     <MenuBtn icons={report} text={isActive ? 'Reports' : ''} />
                     <MenuBtn icons={leaderboard} text={isActive ? 'Leaderboard' : ''} />
                     <MenuBtn icons={question} text={isActive ? 'Manage Question' : ''} />
-                    <Link to={'/glossary'}><MenuBtn icons={glossary} text={isActive ? 'Manage Glossary' : ''} /></Link>
+                    <MenuBtn icons={glossary} text={isActive ? 'Manage Glossary' : ''} goTo={'/glossary'} />
                     <MenuBtn icons={student} text={isActive ? 'Manage Students' : ''} />
                     <MenuBtn icons={profile} text={isActive ? 'Profile Settings' : ''} />
                     <MenuBtn icons={account} text={isActive ? 'Account Management' : ''} />
