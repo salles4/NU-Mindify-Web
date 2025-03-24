@@ -13,6 +13,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Dashboard />} />
           <Route path='/glossary' element={<Glossary />} />
+          <Route path='/students' element={<StudentsPage />} />
         </Routes>
       </BrowserRouter>
     </>
