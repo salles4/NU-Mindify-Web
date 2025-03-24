@@ -29,7 +29,12 @@ export default function Glossary() {
             <div className="mainCont">
                 <div className={isActive ? 'active-side-menu' : 'side-menu'}>
                     
-                    <MenuBtn icons={isActive ? halfburger : hamburger} text='' onPress={handleSideMenu} toolTip={isActive ? null : 'Menu'} />
+                    <MenuBtn 
+                        icons={isActive ? halfburger : hamburger} 
+                        text='' 
+                        onPress={handleSideMenu} 
+                        toolTip={isActive ? null : 'Menu'} 
+                    />
 
                     {isActive 
                         ? <div className="avatar">

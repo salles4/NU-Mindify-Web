@@ -2,7 +2,6 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import home from './images/home.png'
 import MenuBtn from "../../components/MenuBtn";
-
 import hamburger from './images/hamburger.png'
 import halfburger from './images/halfburger.png'
 import analytic from './images/analytic.png'
@@ -30,7 +29,12 @@ export default function Dashboard() {
             <div className="mainCont">
                 <div className={isActive ? 'active-side-menu' : 'side-menu'}>
                     
-                     <MenuBtn icons={isActive ? halfburger : hamburger} text='' onPress={handleSideMenu} />
+                    <MenuBtn 
+                        icons={isActive ? halfburger : hamburger} 
+                        text='' 
+                        onPress={handleSideMenu} 
+                        toolTip={isActive ? null : 'Menu'} 
+                    />
 
                     {isActive ? 
                         <div className="avatar">
@@ -53,15 +57,52 @@ export default function Dashboard() {
                         ''
                     }
 
-                    <MenuBtn icons={home} text={isActive ? 'Dashboard' : ''} goTo={'/'} />
-                    <MenuBtn icons={analytic} text={isActive ? 'Analytics' : ''} />
-                    <MenuBtn icons={report} text={isActive ? 'Reports' : ''} />
-                    <MenuBtn icons={leaderboard} text={isActive ? 'Leaderboard' : ''} />
-                    <MenuBtn icons={question} text={isActive ? 'Manage Question' : ''} />
-                    <MenuBtn icons={glossary} text={isActive ? 'Manage Glossary' : ''} goTo={'/glossary'} />
-                    <MenuBtn icons={student} text={isActive ? 'Manage Students' : ''} />
-                    <MenuBtn icons={profile} text={isActive ? 'Profile Settings' : ''} />
-                    <MenuBtn icons={account} text={isActive ? 'Account Management' : ''} />
+                    <MenuBtn 
+                        icons={home} 
+                        text={isActive ? 'Dashboard' : ''} 
+                        goTo={'/'} 
+                        toolTip={isActive ? null : 'Dashboard'} 
+                    />
+                    <MenuBtn 
+                        icons={analytic} 
+                        text={isActive ? 'Analytics' : ''} 
+                        toolTip={isActive ? null : 'Analytics'} 
+                    />
+                    <MenuBtn 
+                        icons={report} text={isActive ? 'Reports' : ''} 
+                        toolTip={isActive ? null : 'Reports'} 
+                    />
+                    <MenuBtn 
+                        icons={leaderboard} 
+                        text={isActive ? 'Leaderboard' : ''} 
+                        toolTip={isActive ? null : 'Leaderboard'}  
+                    />
+                    <MenuBtn 
+                        icons={question} 
+                        text={isActive ? 'Manage Question' : ''} 
+                        toolTip={isActive ? null : 'Manage Question'} 
+                    />
+                    <MenuBtn 
+                        icons={glossary} 
+                        text={isActive ? 'Manage Glossary' : ''} 
+                        goTo={'/glossary'} 
+                        toolTip={isActive ? null : 'Manage Glossary'} 
+                    />
+                    <MenuBtn 
+                        icons={student} 
+                        text={isActive ? 'Manage Students' : ''} 
+                        toolTip={isActive ? null : 'Manage Students'} 
+                    />
+                    <MenuBtn 
+                        icons={profile} 
+                        text={isActive ? 'Profile Settings' : ''} 
+                        toolTip={isActive ? null : 'Profile Settings'} 
+                    />
+                    <MenuBtn 
+                        icons={account} 
+                        text={isActive ? 'Account Management' : ''} 
+                        toolTip={isActive ? null : 'Account Management'} 
+                    />
                     
                     {
                         isActive ?
