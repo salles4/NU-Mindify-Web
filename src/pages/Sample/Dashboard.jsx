@@ -59,7 +59,7 @@ export default function Dashboard() {
                     <MenuBtn icons={leaderboard} text={isActive ? 'Leaderboard' : ''} />
                     <MenuBtn icons={question} text={isActive ? 'Manage Question' : ''} />
                     <MenuBtn icons={glossary} text={isActive ? 'Manage Glossary' : ''} goTo={'/glossary'} />
-                    <MenuBtn icons={student} text={isActive ? 'Manage Students' : ''} />
+                    <MenuBtn icons={student} text={isActive ? 'Manage Students' : ''} goTo={'/students'} />
                     <MenuBtn icons={profile} text={isActive ? 'Profile Settings' : ''} />
                     <MenuBtn icons={account} text={isActive ? 'Account Management' : ''} />
                     

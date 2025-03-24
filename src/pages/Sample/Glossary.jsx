@@ -84,6 +84,7 @@ export default function Glossary() {
                     <MenuBtn 
                         icons={student} 
                         text={isActive ? 'Manage Students' : ''} 
+                        goTo={'/students'}
                         toolTip={isActive ? null : 'Manage Students'} 
                     />
                     <MenuBtn 
