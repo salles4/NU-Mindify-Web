@@ -1,8 +1,6 @@
 import { BrowserRouter, Route, Routes } from 'react-router'
-import StudentsPage from './pages/Sample/StudentsPage'
-import Sample from './pages/Sample/Sample'
-import Dashboard from './pages/Sample/Dashboard'
-import Glossary from './pages/Sample/Glossary'
+import Dashboard from './pages/Dashboard/Dashboard'
+import Glossary from './pages/glossary/Glossary'
 
 
 function App() {
@@ -11,9 +9,8 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<Dashboard />} />
-          <Route path='/glossary' element={<Glossary />} />
-          <Route path='/students' element={<StudentsPage />} />
+          <Route path='/' element={<Dashboard />}></Route>
+          <Route path='/glossary' element={<Glossary />}></Route>
         </Routes>
       </BrowserRouter>
     </>

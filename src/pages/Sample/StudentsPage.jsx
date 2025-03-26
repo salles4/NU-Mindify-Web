@@ -1,7 +1,7 @@
 import { useState } from "react"
 
 import home from './images/home.png'
-import MenuBtn from "../../components/MenuBtn";
+import MenuBtn from "../../components/sideMenu/MenuBtn";
 import hamburger from './images/hamburger.png'
 import halfburger from './images/halfburger.png'
 import analytic from './images/analytic.png'

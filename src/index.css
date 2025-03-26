@@ -5,97 +5,214 @@
 @theme{
     --color-nu-blue: #35408E;
     --font-poppins: "Poppins", sans-serif;
+    
 }
 
-/* ------------------------------------ SIDE MENU BAR -------------------------------------- */
-.mainCont{
-    @apply w-auto min-h-full flex flex-row bg-red-500; 
-    overflow: visible; 
-    background-image: url('../src/pages/Sample/images/pattern.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+:root{
+    --spacing: 6px;
+
+    --main_height: 100vh;
+    --main_width: 100vw;
+    
+
+    --menu_width: 44px;
+    --active_menu_width: 250px;
+    --btn_height: 35px;
+    --icon_size: 20px;
+    --menu-text: 16px;
 }
+
+/* ------------------------------------ WHOLE CONT ------------------------------------------ */
+.mainCont{
+    height: var(--main_height);
+    width: var(--main_width);
+    padding: var(--spacing) * 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    overflow: hidden;
+}
+/* ------------------------------------ END WHOLE CONT ------------------------------------------ */
+
+
+/* ------------------------------------ SIDE MENU ------------------------------------------ */
 
 .active-side-menu{
-    @apply w-[20vw] h-[95vh] bg-yellow-50 mt-[2.5vh] ml-[1.5vw] rounded-xl mr-[1.5vw];
-    position: sticky;
-    top: 0;
+    width: var(--active_menu_width);
+    height: calc(var(--main_height) - (var(--spacing)*4));
+    background-color: #fef3c6;
+    margin: 0 var(--spacing) 0 var(--spacing);
+    display: flex;
+    flex-direction: column;
+    transition: .3s;
+    overflow-y: auto;
+    border-radius: 12px;
 }
 
 .side-menu{
-    @apply w-[3vw] h-[95vh] bg-yellow-50 mt-[2.5vh] ml-[1.5vw] rounded-lg mr-[1.5vw];
-    position: sticky;
-    top: 0;
+    width: var(--menu_width);
+    height: calc(var(--main_height) - (var(--spacing)*4));
+    background-color: #fef3c6;
+    margin: 0 var(--spacing) 0 var(--spacing);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: .3s;
+    overflow-y: auto;
+    border-radius: 12px;
+    overflow: visible;
 }
-
-/* ------------------------------------ CONTENT -------------------------------------- */
-
-.active-main-content{
-    @apply w-[75vw] h-auto flex items-center flex-col mt-[2.5vh];
-}
-.main-content{
-    @apply w-[92vw] h-auto flex items-center flex-col mt-[2.5vh];
-}
-
-
-.header{
-    @apply w-full h-[30vh] bg-yellow-50 rounded-2xl;
-}
-
-.body{
-    @apply w-full h-[120vh] bg-yellow-50 rounded-2xl mt-[2vh];
-}
-
-
-/* ------------------------------------ END CONTENT -------------------------------------- */
 
 .btn-container{
-    @apply w-full h-[5%] flex flex-row mb-[10px] items-center pl-[1px] pt-[1vh];
+    width: 100%;
+    height: var(--btn_height);
     cursor: pointer;
+    padding: var(--spacing);
+    transition: .3s;
+    margin: 7px 0 7px 0;
+}
+
+.btn-container:hover{
+    background-color: #ffcc66; 
+    cursor: pointer;
+}
+
+.active-btn-container{
+    width: 100%;
+    height: var(--btn_height);
+    cursor: pointer;
+    padding: var(--spacing);
+    transition: .3s;
+    margin: 2px 0 2px 0;
+}
+
+
+.active-btn-container:hover{
+    background-color: #ffcc66; 
+}
+
+.selected {
+    background-color: #ffcc66; 
+}
+
+.tooltip{
+    width: 100%;
+}
+
+.center-tooltip{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-icon{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.active-btn-icon{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: var(--spacing);
 }
 
 .menu-icon{
-    @apply w-[20px] m-[10px] ml-[10px] ;
+    width: var(--icon_size);
     cursor: pointer;
+    transition: .3s;
 }
 
 .menu-text{
-    @apply text-base font-medium font-sans text-black ml-[10px];
+    font-size: var(--menu-text);
+    font-weight: 500;
+    font-style: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    margin: 0 0 0 10px;
+    color: black;
     cursor: pointer;
+    transition: .3s;
 }
 
 .avatar{
-    @apply w-full h-auto justify-center items-center mb-[10px];
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: var(--spacing) 0 var(--spacing) 0;
     cursor: pointer;
+    
 }
 .avatar-container{
     @apply ring-primary ring-offset-base-100 w-24 rounded-full ring 
     ring-offset-2;
+    transition: 1s;
 }
 
 .name-container{
-    @apply w-full flex flex-col justify-center items-center mb-[20px];
+    transition: 1s;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 var(--spacing) 0;
 }
 .user-name{
-    @apply text-yellow-600 text-lg font-bold;
+    font-size: 18px;
+    font-weight: 700;
+    color: rgb(234, 175, 13)
 }
 
 .user-email{
     @apply text-xs text-gray-500 font-medium;
+    font-size: 12px;
+    color: #6a7282;
+    font-weight: 500;
 }
 
 .logout-container{
-    @apply w-full flex flex-col justify-center items-center 
-    mb-[20px];
+    transition: .5s;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0 20px 0;
 }
 
 .logout-btn{
-    @apply btn btn-soft btn-warning w-[150px] h-[50px];
+    @apply btn btn-soft btn-warning w-[150px] h-[30px];
 }
 
-/* ------------------------------------ END SIDE MENU BAR -------------------------------------- */
+/* ------------------------------------ END SIDE MENU ------------------------------------------ */
 
 
-
-
+/* ------------------------------------ MAIN CONTENT ------------------------------------------ */
+.active-main-content{
+    background-color: cornflowerblue;
+    height: calc(var(--main_height) - (var(--spacing)*4));
+    width: calc(var(--main_width) - var(--active_menu_width) - (var(--spacing)*5));
+    margin: 0 var(--spacing) 0 var(--spacing);
+    overflow-y: auto;
+    overflow-x: auto;
+    transition: .3s;
+    border-radius: 12px;
+    
+}
+.main-content{
+    width: calc(var(--main_width) - var(--menu_width) - (var(--spacing)*5));
+    height: calc(var(--main_height) - (var(--spacing)*4));
+    margin: 0 var(--spacing) 0 var(--spacing);
+    overflow-y: auto;
+    overflow-x: auto;
+    background-color: cornflowerblue;
+    transition: .3s;
+    border-radius: 12px;
+    
+}
+/* ------------------------------------ END MAIN CONTENT ------------------------------------------ */
