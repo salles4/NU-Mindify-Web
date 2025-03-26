@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes } from 'react-router'
 import Dashboard from './pages/dashboard/Dashboard'
 import Glossary from './pages/glossary/Glossary'
+// import Template from './pages/template/Template'
 
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Dashboard />}></Route>
           <Route path='/glossary' element={<Glossary />}></Route>
+          {/* <Route path='/template' element={<Template />}></Route> */}
         </Routes>
       </BrowserRouter>
     </>
