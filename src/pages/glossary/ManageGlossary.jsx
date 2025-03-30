@@ -3,7 +3,12 @@
 export default function ManageGlossary() {
     return (
         <>
-            <h1>Manage Glossary</h1>
+            <div className="content-header">
+
+            </div>
+            <div className="content-body">
+
+            </div>
         </>
     );
 }

@@ -6,15 +6,15 @@ import halfburger from '../../assets/halfburger.png'
 
 
 
-import home from '../../assets/home.png'
-import analytics from '../../assets/analytic.png'
-import reports from '../../assets/report.png'
-import leaderboard from '../../assets/leaderboard.png'
-import question from '../../assets/question.png'
-import glossary from '../../assets/glossary.png'
-import student from '../../assets/student.png'
-import profile from '../../assets/profile.png'
-import account from '../../assets/account.png'
+import dashboard from '../../assets/dashboard.svg'
+import analytics from '../../assets/analytic.svg'
+import reports from '../../assets/report.svg'
+import leaderboard from '../../assets/leaderboard.svg'
+import question from '../../assets/question.svg'
+import glossary from '../../assets/glossary.svg'
+import student from '../../assets/student.svg'
+import profile from '../../assets/profile.svg'
+import account from '../../assets/account.svg'
 
 
 
@@ -63,7 +63,7 @@ export default function Sidebar() {
             
 
             <MenuBtn 
-                icons={home}
+                icons={dashboard}
                 active={isActive}
                 text='Dashboard'
                 isSelected={selected === 'dashboard'}

@@ -18,7 +18,7 @@ import AccountManagement from './pages/accounts/AccountManagement'
 
 function App() {
   const [isActive, setActive] = useState(false)
-  const [selected, setSelected] = useState(null)
+  const [selected, setSelected] = useState('dashboard')
 
   return (
     <ActiveContext.Provider value={{ isActive, setActive, selected, setSelected }}>
