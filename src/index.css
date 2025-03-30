@@ -16,6 +16,8 @@
     --menu-text: 16px;
 
     --content-container-height: calc(var(--main_height) - (var(--spacing) * 3));
+
+    --glossary-header-height: 200px;
   }
   
 * {
@@ -197,7 +199,7 @@
 .user-name{
   font-size: 18px;
   font-weight: 700;
-  color: rgb(234, 175, 13)
+  color: #FFEFBA;
 }
 
 .user-email{
@@ -253,24 +255,97 @@
 
 
 
-/*----- GLOSSARY AND QUESTIONS HEADER -----*/
 
-.content-header{
+
+/* ------------------------------------------- FOR MANAGE GLOSSARY AND QUESTION ONLY ---------------------------- */
+
+/*----- GLOSSARY AND QUESTIONS HEADER AND BODY -----*/
+
+.glossary-header{
   width: 100%;
-  height: 180px;
+  height: var(--glossary-header-height);
   background-color: red;
   border-radius: 15px;
   margin: 0 0 var(--spacing) 0;
 }
 
-.content-body{
+.glossary-body{
   width: 100%;
-  height: calc(var(--content-container-height) - 180px);
+  height: calc(var(--content-container-height) - var(--glossary-header-height));
   background-color: green;
   border-radius: 15px;
 }
 
 /********************************/
+
+
+/*----- TITLE, SEARCH BAR AND BTN LETTERS -----*/
+
+.glossary-title-container{
+  width: 100%;
+  height: calc((var(--glossary-header-height) - (var(--mini-spacing)) * 2) / 3);
+  background-color: transparent;
+  margin: 0 0 var(--mini-spacing) 0;
+  display: flex;
+  align-items: center;
+  padding: 0 0 0 30px;
+}
+
+.glossary-title{
+  font-size: 30px;
+  color: #FFC100;
+}
+
+
+.glossary-search-container {
+  width: 100%;
+  height: calc((var(--glossary-header-height) - (var(--mini-spacing)) * 2) / 3);
+  margin: 0 0 var(--mini-spacing) 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.glossary-search-holder {
+  width: 80%;
+  height: 40px;
+  background-color: white;
+  border-radius: 30px;
+  display: flex;         
+  align-items: center;       
+  padding: 0 var(--spacing);           
+}
+
+.search-btn {
+  width: 40px;
+  height: 100%;
+  border: none;        
+  background-color: brown;      
+  cursor: pointer;    
+  margin: 0 var(--mini-spacing) 0 0;       
+}
+
+.search-input {
+  flex-grow: 1;             
+  height: 100%;              
+  border: none;              
+  outline: none;             
+  padding: 0 var(--mini-spacing);           
+  color: black;              
+}
+
+
+.glossary-letters-btn-container{
+  width: 100%;
+  height: calc((var(--glossary-header-height) - (var(--mini-spacing) * 2)) / 3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/********************************/
+
+/* *********************************************************************************************************** */
 
   
 

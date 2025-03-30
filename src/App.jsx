@@ -37,6 +37,7 @@ function App() {
               <Route path='/students' element={<ManageStudents />} />
               <Route path='/profile' element={<Profile />} />
               <Route path='/account' element={<AccountManagement />} />
+              <Route path='*' element={<Dashboard />} />
             </Routes>
           </div>
         </div>
