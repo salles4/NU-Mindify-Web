@@ -1,10 +1,14 @@
-import { useState, useRef, useEffect } from "react";
+import { useState } from "react";
+
+
+
 
 export default function ManageGlossary() {
-    const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
-    
-    const terms = 
-    [
+
+
+    const letters = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+
+    const terms = [
         {
           "word": "Confidentiality",
           "meaning": "An attribute of information that describes how data is protected from disclosure or exposure to unauthorized individuals or systems."
@@ -333,34 +337,12 @@ export default function ManageGlossary() {
       ]
       
 
-    // Group terms by first letter
-    const groupedTerms = terms.reduce((acc, term) => {
-        const firstLetter = term.word[0].toUpperCase();
-        if (!acc[firstLetter]) acc[firstLetter] = [];
-        acc[firstLetter].push(term);
-        return acc;
-    }, {});
-
-    const termRefs = useRef({});
-
-    useEffect(() => {
-        // Initialize refs for each letter
-        letters.forEach(letter => {
-            termRefs.current[letter] = null;
-        });
-    }, []);
-
-    const scrollToLetter = (letter) => {
-        const ref = termRefs.current[letter];
-        if (ref) {
-            ref.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-    };
-
     return (
         <>
             <div className="glossary-header">
-                <h1 className="glossary-title">Manage Glossary</h1>
+                <div className="glossary-title-container">
+                    <h1 className="glossary-title">Manage Glossary</h1>
+                </div>
 
                 <div className="glossary-search-container">
                     <div className="glossary-search-holder">
@@ -374,38 +356,17 @@ export default function ManageGlossary() {
                 </div>
 
                 <div className="glossary-letters-btn-container">
-                    {letters.map((letter, index) => (
-                        <button
-                            key={index}
-                            onClick={() => scrollToLetter(letter)}
-                            className="bg-green-500 text-white hover:bg-green-600 "
-                        >
-                            {letter}
-                        </button>
-                    ))}
+                    {letters.map((elem, index) => 
+                        <div style={{width: 40, height: 40, backgroundColor: 'green'}} key={index}>
+                            <h1>{elem}</h1>
+                        </div>
+                        
+                    )}
                 </div>
             </div>
-
             <div className="glossary-body">
-                {letters.map((letter) => (
-                    <div key={letter} ref={el => termRefs.current[letter] = el}>
-                        <h2 className="text-2xl font-bold my-4">{letter}</h2>
-                        {groupedTerms[letter]?.length > 0 ? (
-                            <div className="space-y-4">
-                                {groupedTerms[letter].map((term, idx) => (
-                                    <div key={idx}>
-                                        <h3 className="text-lg font-semibold">{term.word}</h3>
-                                        <p className="text-gray-600">{term.meaning}</p>
-                                    </div>
-                                ))}
-                            </div>
-                        ) : (
-                            <p className="text-gray-400 italic">No terms available</p>
-                        )}
-                    </div>
-                ))}
-            </div>
 
+            </div>
         </>
     );
 }

@@ -71,6 +71,7 @@
   overflow-y: auto;
   scrollbar-width: none; 
   -ms-overflow-style: none;
+  min-width: var(--active_menu_width);
 }
 
 .active-side-menu::-webkit-scrollbar {
@@ -274,6 +275,11 @@
   height: calc(var(--content-container-height) - var(--glossary-header-height));
   background-color: green;
   border-radius: 15px;
+  overflow: hidden;
+  overflow-y: auto;
+  scrollbar-width: none; 
+  -ms-overflow-style: none;
+  padding: calc(var(--spacing) * 2);
 }
 
 /********************************/
