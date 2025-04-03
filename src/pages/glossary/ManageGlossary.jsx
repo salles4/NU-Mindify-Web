@@ -1,5 +1,8 @@
 import { useRef, } from "react";
 import terms from '../../data/GlossaryTerms.json'
+import edit from '../../assets/edit.svg'
+import dropdown from '../../assets/dropdown.svg'
+import search from '../../assets/search.svg'
 
 export default function ManageGlossary() {
     const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
@@ -28,7 +31,9 @@ export default function ManageGlossary() {
 
                 <div className="glossary-search-container">
                     <div className="glossary-search-holder">
-                        <button className="search-btn"></button>
+                        <button className="search-btn">
+                            <img src={search}></img>
+                        </button>
                         <input type="text" placeholder="Search" className="search-input" />
                     </div>
                 </div>
@@ -38,7 +43,7 @@ export default function ManageGlossary() {
                         <button
                             key={index}
                             onClick={() => scrollToLetter(letter)}
-                            className="bg-green-500 text-white hover:bg-green-600 "
+                            className="w-[30px] h-[30px] ml-[6px] mr-[6px] cursor-pointer hover:underline text-black font-bold"
                         >
                             {letter}
                         </button>
@@ -48,14 +53,22 @@ export default function ManageGlossary() {
 
             <div className="glossary-body">
                 {letters.map((letter) => (
-                    <div key={letter} ref={(el) => (termRefs.current[letter] = el)}>
-                        <h2 className="text-2xl font-bold my-4">{letter}</h2>
+                    <div key={letter} ref={(el) => (termRefs.current[letter] = el)} className="word-main-container">
+                        <h2 className="letter-title">{letter}</h2>
                         {groupedTerms[letter]?.length > 0 ? (
-                            <div className="space-y-4">
+                            <div className="all-word-def-container">
                                 {groupedTerms[letter].map((term, idx) => (
-                                    <div key={idx}>
-                                        <h3 className="text-lg font-semibold">{term.word}</h3>
-                                        <p className="text-gray-600">{term.meaning}</p>
+                                    <div key={idx} className="per-word-container">
+                                        <h3 className="word-container">{term.word}</h3>
+                                        <p className="meaning-container">{term.meaning}</p>
+                                        
+                                        <div className="gege">
+                                            <img src={edit} className="mainIcon"></img>
+                                            <div className="dropdown">
+                                            <img src={dropdown} className="mainIcon"></img>
+                                            </div>
+                                        </div>
+
                                     </div>
                                 ))}
                             </div>
