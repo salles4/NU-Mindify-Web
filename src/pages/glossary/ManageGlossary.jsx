@@ -1,5 +1,6 @@
 import { useRef, } from "react";
 import terms from '../../data/GlossaryTerms.json'
+import edit from '../../assets/edit.svg'
 
 export default function ManageGlossary() {
     const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
@@ -48,14 +49,21 @@ export default function ManageGlossary() {
 
             <div className="glossary-body">
                 {letters.map((letter) => (
-                    <div key={letter} ref={(el) => (termRefs.current[letter] = el)}>
-                        <h2 className="text-2xl font-bold my-4">{letter}</h2>
+                    <div key={letter} ref={(el) => (termRefs.current[letter] = el)} className="word-main-container">
+                        <h2 className="letter-title">{letter}</h2>
                         {groupedTerms[letter]?.length > 0 ? (
-                            <div className="space-y-4">
+                            <div className="all-word-def-container">
                                 {groupedTerms[letter].map((term, idx) => (
-                                    <div key={idx}>
-                                        <h3 className="text-lg font-semibold">{term.word}</h3>
-                                        <p className="text-gray-600">{term.meaning}</p>
+                                    <div key={idx} className="per-word-container">
+                                        <h3 className="word-container">{term.word}</h3>
+                                        <p className="meaning-container">{term.meaning}</p>
+                                        
+                                        <div className="gege">
+                                            <img src={edit} className="mainIcon"></img>
+                                            <div className="dropdown">
+                                            </div>
+                                        </div>
+
                                     </div>
                                 ))}
                             </div>
