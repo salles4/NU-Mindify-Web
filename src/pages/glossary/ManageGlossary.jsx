@@ -1,6 +1,8 @@
 import { useRef, } from "react";
 import terms from '../../data/GlossaryTerms.json'
 import edit from '../../assets/edit.svg'
+import dropdown from '../../assets/dropdown.svg'
+import search from '../../assets/search.svg'
 
 export default function ManageGlossary() {
     const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
@@ -29,7 +31,9 @@ export default function ManageGlossary() {
 
                 <div className="glossary-search-container">
                     <div className="glossary-search-holder">
-                        <button className="search-btn"></button>
+                        <button className="search-btn">
+                            <img src={search}></img>
+                        </button>
                         <input type="text" placeholder="Search" className="search-input" />
                     </div>
                 </div>
@@ -39,7 +43,7 @@ export default function ManageGlossary() {
                         <button
                             key={index}
                             onClick={() => scrollToLetter(letter)}
-                            className="bg-green-500 text-white hover:bg-green-600 "
+                            className="w-[30px] h-[30px] ml-[6px] mr-[6px] cursor-pointer hover:underline text-black font-bold"
                         >
                             {letter}
                         </button>
@@ -61,6 +65,7 @@ export default function ManageGlossary() {
                                         <div className="gege">
                                             <img src={edit} className="mainIcon"></img>
                                             <div className="dropdown">
+                                            <img src={dropdown} className="mainIcon"></img>
                                             </div>
                                         </div>
 

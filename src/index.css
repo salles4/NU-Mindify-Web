@@ -237,6 +237,7 @@
   max-width: var(--icon_size);
   overflow: hidden;
   transition: .3s;
+  cursor: pointer;
 }
 
 .active-mainIcon{
@@ -344,10 +345,12 @@
 .search-btn {
   width: 40px;
   height: 100%;
-  border: none;        
-  background-color: brown;      
+  border: none;           
   cursor: pointer;    
   margin: 0 var(--mini-spacing) 0 0;       
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .search-input {
@@ -364,7 +367,7 @@
   width: 100%;
   height: calc((var(--glossary-header-height) - (var(--mini-spacing) * 2)) / 3);
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -397,6 +400,8 @@
   width: var(--per-word-width);
   height: 60px;
   display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 0 var(--mini-spacing) 0 var(--mini-spacing);
   align-items: center;
   margin: var(--mini-spacing) 0 var(--mini-spacing) 0;
@@ -426,7 +431,13 @@
 
 .dropdown{
   width: 30px;
-  background-color: black;
+  height: 30px;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #97a2b8d7;
+  border-radius: 5px;
 }
 
 /********************************/
