@@ -83,7 +83,69 @@ export default function Profile(){
                         <button class="edit-btn-prof-settings">Edit Profile</button>
                     </div>
 
-                    <div class="forms-cont-prof-settings">
+                    <div class='forms-cont-prof-settings'>
+                    
+                        <div class="fname-empno-cont">
+                            <div class="fname-cont">
+                                <label class="form-text">First Name</label>
+                                <input class='form-fields'
+                                type='text'
+                                />
+                            </div>
+
+                            <div class="empno-cont">
+                                <label class="form-text">Employee No.</label>
+                                <input class='form-fields'
+                                type='text'
+                                />
+                             </div>
+                        </div>
+
+                        <div class="lname-nubranch-cont">
+                            <div class="lname-cont">
+                                    <label class="form-text">Last Name</label>
+                                    <input class='form-fields'
+                                        type='text'
+                                    />
+                            </div>
+
+                            <div class="nubranch-cont">
+                             <label class="form-text">NU Branch</label>
+                                <select class="form-fields">
+                                    <option value="default">Select a Branch</option>
+                                    <option value="manila">NU Manila</option>
+                                    <option value="moa">NU MOA</option>
+                                    <option value="laguna">NU Laguna</option>
+                                    <option value="fairview">NU Fairview</option>
+                                    <option value="baliwag">NU Baliwag</option>
+                                    <option value="dasma">NU Dasmarinas</option>
+                                    <option value="lipa">NU Lipa</option>
+                                    <option value="clark">NU Clark</option>
+                                    <option value="bacolod">NU Bacolod</option>
+                                    <option value="eastortigas">NU East Ortigas</option>
+                                    
+                                </select>
+                             </div>
+                        </div>
+
+                        <div class="email-position-cont">
+                            <div class="email-cont">
+                                    <label class="form-text">Email</label>
+                                    <input class='form-fields'
+                                        type='text'
+                                    />
+                            </div>
+
+                            <div class="pos-cont">
+                             <label class="form-text">Position</label>
+                                <input class='form-fields'
+                                    type='text'
+                                />
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* <div class="forms-cont-prof-settings">
 
                         <div class="first-forms-cont">
 
@@ -91,7 +153,6 @@ export default function Profile(){
                                 <label class="form-text">First Name</label>
                                 <input class='form-fields'
                                     type='text'
-                                    // placeholder='First Name'
                                 />
                             </div>
 
@@ -99,7 +160,6 @@ export default function Profile(){
                                 <label class="form-text">Last Name</label>
                                 <input class='form-fields'
                                     type='text'
-                                    // placeholder='Last Name'
                                 />
                             </div>
 
@@ -107,7 +167,6 @@ export default function Profile(){
                                 <label class="email-text">Email</label>
                                 <input class='form-fields'
                                     type='text'
-                                    // placeholder='Email'
                                 />
                             </div>
 
@@ -119,7 +178,6 @@ export default function Profile(){
                              <label class="empno-text">Employee No.</label>
                                 <input class='form-fields'
                                 type='text'
-                                // placeholder='Employee No.'
                             />
                              </div>
 
@@ -145,12 +203,11 @@ export default function Profile(){
                              <label class="pos-text">Position</label>
                                 <input class='form-fields'
                                     type='text'
-                                    // placeholder='Position'
                                 />
                              </div>
                         </div>
 
-                    </div>
+                    </div> */}
 
                     {/* <div class="forms-cont-prof-settings">
                         <div class="fname-empno-cont">
