@@ -17,28 +17,27 @@ export default function Profile(){
         setImage(event.target.files[0]);
     }
 
-    const [firstName, setFirstName] = useState("Mary Ruth")
-    const [lastName, setLastName] = useState("Cabales")
-    const [userEmail, setUserEmail] = useState("mrcabales@nu-moa.edu.ph")
-    const [employeeNo, setEmployeeNo] = useState("2")
-    const [nuBranch, setNuBranch] = useState("NU MOA")
-    const [userPosition, setUserPosition] = useState("")
+    // const [firstName, setFirstName] = useState("Mary Ruth")
+    // const [lastName, setLastName] = useState("Cabales")
+    // const [userEmail, setUserEmail] = useState("mrcabales@nu-moa.edu.ph")
+    // const [employeeNo, setEmployeeNo] = useState("2")
+    // const [nuBranch, setNuBranch] = useState("NU MOA")
+    // const [userPosition, setUserPosition] = useState("")
 
-    const [editing, isEditing] = useState(false)
+    // const [editing, isEditing] = useState(false)
 
-    const handleEditButton = () => {
-        isEditing(true)
-    }
+    // const handleEditButton = () => {
+    //     isEditing(true)
+    // }
 
-    const handleSaveButton = () => {
-        isEditing(false)
-    }
+    // const handleSaveButton = () => {
+    //     isEditing(false)
+    // }
 
     return(
 
         <>  
             <h1>Profile Settings</h1>
-
             <div class="profile-picture-cont">
                 {/* <img class="prof-pic" src={image} /> */}
                 {image ? <img class="prof-pic" src={URL.createObjectURL(image)} alt=""/> : <img class="prof-pic" src="https://avatarfiles.alphacoders.com/375/375159.jpeg" alt="" />}
@@ -61,7 +60,7 @@ export default function Profile(){
                 <label class="upload-btn-bottom-label">At least 256 x 256 px PNG or JPG file</label>
             </div>
 
-            <div class="name-cont">
+            {/* <div class="name-cont">
                 <h1 class="profile-name">{firstName} {lastName}</h1>
                 <button><img class="edit-btn" src={edit} onClick={handleEditButton} /></button>
             </div>
@@ -79,7 +78,7 @@ export default function Profile(){
             
             <div>
                 <button className='border-2 cursor-pointer' onClick={handleSaveButton}>Save</button>
-            </div>
+            </div> */}
 
         </>
     )
