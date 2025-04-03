@@ -396,7 +396,7 @@
 .prof-pic-cont {
   position: absolute;
   top: 140px;
-  left: 100px;
+  left: 130px;
   width: 305px;
   height: 310px;
   display: flex;
@@ -442,7 +442,7 @@
   width: 290px;
   height: 45x;
   position: absolute;
-  margin: 225px 0 0 110px;
+  margin: 225px 0 0 140px;
 
   overflow: hidden;
   /* background: purple; */
@@ -489,7 +489,7 @@
   width: 90%;
   height: 100%;
   
-  margin: 0 0 0 92px;
+  margin: 0 0 0 96px;
 
   /* background: gray; */
 }
@@ -497,9 +497,8 @@
 .first-forms-cont {
   display: flex;
   flex-direction: row;
-  width: 100%;
+  width: 95%;
   height: 20%;
-  overflow-y: auto;
 
   /* background: red; */
 }
@@ -538,11 +537,10 @@
 }
 
 .second-forms-cont {
-  width: 100%;
+  width: 95%;
   height: 50%;
   display: flex;
   flex-direction: row;
-  overflow-y: auto;
 
   /* background: black; */
 }
