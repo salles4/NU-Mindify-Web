@@ -464,7 +464,7 @@
   width: 74%;
   height: 48%;
   float: right;
-  padding: 25px 0 0 0;
+  padding: 30px 0 0 30px;
 
   /* background: purple */
 }
@@ -488,8 +488,8 @@
   flex-direction: column;
   width: 90%;
   height: 100%;
-  overflow-y: auto;
-  margin: 0 0 0 58px;
+  
+  margin: 0 0 0 92px;
 
   /* background: gray; */
 }
@@ -614,102 +614,6 @@
   color: black;
   font-family: Poppins;
 }
-
-/* .main-cont-prof-settings {
-  position: relative;
-  height: 100%;
-  background: red;
-  overflow: hidden;
-}  */
-
-/* .content-cont {
-  width: 100%;
-  height: 657px;
-  border: 1px solid black;
-  border-radius: 15px;
-  background: white;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  margin-top: 210px;
-  overflow: hidden;
-} */
-
-/* .profile-picture-cont {
-  width: 305px;
-  height: 310px;
-  border: 1px solid yellow;
-  border-radius: 100%;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 10px, rgba(0, 0, 0, 0.23) 0px 3px 10px;
-  top: 100px; higher num - lower pos // lower num  - higher pos
-  left: 200px; lower num - closer to left // higher num - farther to left
-  position: absolute;
-  background: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-} */
-
-/* .prof-pic {
-  border-radius: 100%;
-  width: 260px;
-  height: 260px;
-} */
-
-/* .upload-btn-cont {
-  width: 290px;
-  height: 150px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  margin-left: 423px;
-  overflow: hidden;
-  background: red;
-} */
-
-/* .upload-btn {
-  width: 290px;
-  height: 45px;
-  border-radius: 33px;
-  border: 1px solid black;
-  background: white;
-  color: black;
-  cursor: pointer;
-} */
-
-/* .upload-btn-bottom-label {
-  margin-top: 15px;
-  color: black;
-} */
-
-/* .name-cont {
-  width: 1000px;
-  height: 50px;
-  display: flex;
-  justify-content:flex-start;
-  align-items:center;
-  flex-direction: row;
-  background: red;
-
-  margin-top: 85px;
-  margin-left: 70px;
-  overflow: hidden;
-} */
-
-/* .profile-name {
-  color: black;
-  font-size: 35px;
-  font-weight: bold;
-  overflow: hidden;
-} */
-
-/* .edit-btn {
-  width: 35px;
-  height: 35px;
-  cursor: pointer;
-  margin-left: 10px;
-} */
-
 
 
 /* ------------------------------------------- END OF PROFILE SETTINGS CSS ---------------------------- */
